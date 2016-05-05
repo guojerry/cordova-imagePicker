@@ -8,19 +8,19 @@
 "picker.navigation.title" = "图片选取";
 
 /* %@ Items Selected */
-"picker.selection.multiple-items" = "%@条已选";
+"picker.selection.multiple-items" = "已选择%@个项目";
 
 /* %@ Photos Selected */
-"picker.selection.multiple-photos" = "%@张照片已选";
+"picker.selection.multiple-photos" = "已选择%@张照片";
 
 /* %@ Videos Selected */
-"picker.selection.multiple-videos" = "%@条视频已选";
+"picker.selection.multiple-videos" = "已选择%@个视频";
 
 /* 1 Photo Selected */
-"picker.selection.single-photo" = "一张照片已选";
+"picker.selection.single-photo" = "已选择一张照片";
 
 /* 1 Video Selected */
-"picker.selection.single-video" = "一条视频已选";
+"picker.selection.single-video" = "已选择一个视频";
 
 /* All photos */
 "picker.table.all-photos-label" = "相近胶卷";
