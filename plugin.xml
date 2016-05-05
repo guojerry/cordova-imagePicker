@@ -67,7 +67,7 @@
 		<resource-file src="src/ios/GMImagePicker/GMVideoIcon.png" />
 		<resource-file src="src/ios/GMImagePicker/GMVideoIcon@2x.png" />
 
-		<resource-file src="src/ios/GMImagePicker/Base.lproj/GMImagePicker.strings" target="res/strings-base/GMImagePicker.strings" />
+		<!--resource-file src="src/ios/GMImagePicker/Base.lproj/GMImagePicker.strings" target="res/strings-base/GMImagePicker.strings" /-->
 		<resource-file src="src/ios/GMImagePicker/zh-Hans.lproj/GMImagePicker.strings" target="res/strings-zh/GMImagePicker.strings" />
 
 		<!-- NOTE that MRProgress (and its dependency AFNetworking) have been added for a semi-useful
