@@ -75,6 +75,7 @@
 		<asset src="src/ios/GMImagePicker/fr.lproj/GMImagePicker.strings" target="res/strings-fr/GMImagePicker.strings" />
 		<asset src="src/ios/GMImagePicker/it.lproj/GMImagePicker.strings" target="res/strings-it/GMImagePicker.strings" />
 		<asset src="src/ios/GMImagePicker/pt.lproj/GMImagePicker.strings" target="res/strings-pt/GMImagePicker.strings" />
+		<asset src="src/ios/GMImagePicker/zh-Hans.lproj/GMImagePicker.strings" target="res/strings-zh-Hans/GMImagePicker.strings" />
 
 		<!-- NOTE that MRProgress (and its dependency AFNetworking) have been added for a semi-useful
 		     progress indicator. We may remove that if we have trouble with these files for some reason. -->
