@@ -8,13 +8,13 @@
 "picker.navigation.title" = "图片选取";
 
 /* %@ Items Selected */
-"picker.selection.multiple-items" = "已选择%@个项目";
+"picker.selection.multiple-items" = "已选择%@/%@个项目";
 
 /* %@ Photos Selected */
-"picker.selection.multiple-photos" = "已选择%@张照片";
+"picker.selection.multiple-photos" = "已选择%@/%@张照片";
 
 /* %@ Videos Selected */
-"picker.selection.multiple-videos" = "已选择%@个视频";
+"picker.selection.multiple-videos" = "已选择%@/%@个视频";
 
 /* 1 Photo Selected */
 "picker.selection.single-photo" = "已选择一张照片";
