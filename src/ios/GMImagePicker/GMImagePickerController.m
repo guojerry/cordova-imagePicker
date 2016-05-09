@@ -142,12 +142,12 @@
     // alert user when they want to cancel while they have some photos selected
 
     UIAlertController * alert = [UIAlertController
-        alertControllerWithTitle:@"Warning"
-                         message:@"Navigating back will reset all your previously selected photos. Would you like to continue?"
+        alertControllerWithTitle:@"确认"
+                         message:@"返回将重置所有已经选取的相片，是否继续？"
                   preferredStyle:UIAlertControllerStyleAlert];
 
     UIAlertAction* ok = [UIAlertAction
-        actionWithTitle:@"Yes"
+        actionWithTitle:@"确定"
                   style:UIAlertActionStyleDefault
                 handler:^(UIAlertAction * action)
                 {
@@ -158,7 +158,7 @@
                 }];
 
     UIAlertAction* cancel = [UIAlertAction
-        actionWithTitle:@"No"
+        actionWithTitle:@"取消"
                   style:UIAlertActionStyleDefault
                 handler:^(UIAlertAction * action)
                 {
