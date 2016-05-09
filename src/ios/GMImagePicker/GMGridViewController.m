@@ -367,14 +367,14 @@ NSString * const GMGridViewCellIdentifier = @"GMGridViewCellIdentifier";
     BOOL shouldSelect = self.picker.selectedAssets.count < self.picker.maxNumOfAllowedSelectedImages;
     if (!shouldSelect) {
         NSString *title =
-                    [NSString stringWithFormat:NSLocalizedString(@"Maximum %d photos.", nil), self.picker.maxNumOfAllowedSelectedImages];
+                    [NSString stringWithFormat:NSLocalizedString(@"%d张相片已选", nil), self.picker.maxNumOfAllowedSelectedImages];
         NSString *message =
-                    [NSString stringWithFormat:NSLocalizedString(@"You can only select maximum of %d photos for product package.", nil), self.picker.maxNumOfAllowedSelectedImages];
+                    [NSString stringWithFormat:NSLocalizedString(@"选取上限已到，最多只能选取%d张相片", nil), self.picker.maxNumOfAllowedSelectedImages];
         [[[UIAlertView alloc] initWithTitle:title
                                     message:message
                                    delegate:nil
                           cancelButtonTitle:nil
-                          otherButtonTitles:NSLocalizedString(@"Okay", nil), nil] show];
+                          otherButtonTitles:NSLocalizedString(@"确定", nil), nil] show];
         return NO;
     }
     PHAsset *asset = self.assetsFetchResults[indexPath.item];
