@@ -5,7 +5,7 @@
 "picker.navigation.done-button" = "完成";
 
 /* Navigation bar default title */
-"picker.navigation.title" = "图片选取";
+"picker.navigation.title" = "照片选取";
 
 /* %@ Items Selected */
 "picker.selection.multiple-items" = "已选择%@/%@个项目";
@@ -23,7 +23,7 @@
 "picker.selection.single-video" = "已选择一个视频";
 
 /* All photos */
-"picker.table.all-photos-label" = "相近胶卷";
+"picker.table.all-photos-label" = "相机胶卷";
 
 /* Smart Albums */
 "picker.table.smart-albums-header" = "智能相册";

@@ -143,7 +143,7 @@
 
     UIAlertController * alert = [UIAlertController
         alertControllerWithTitle:@"确认"
-                         message:@"返回将重置所有已经选取的相片，是否继续？"
+                         message:@"返回将重置所有已经选取的照片，是否继续？"
                   preferredStyle:UIAlertControllerStyleAlert];
 
     UIAlertAction* ok = [UIAlertAction

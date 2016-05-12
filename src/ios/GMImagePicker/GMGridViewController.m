@@ -367,9 +367,9 @@ NSString * const GMGridViewCellIdentifier = @"GMGridViewCellIdentifier";
     BOOL shouldSelect = self.picker.selectedAssets.count < self.picker.maxNumOfAllowedSelectedImages;
     if (!shouldSelect) {
         NSString *title =
-                    [NSString stringWithFormat:NSLocalizedString(@"%d张相片已选", nil), self.picker.maxNumOfAllowedSelectedImages];
+                    [NSString stringWithFormat:NSLocalizedString(@"%d张照片已选", nil), self.picker.maxNumOfAllowedSelectedImages];
         NSString *message =
-                    [NSString stringWithFormat:NSLocalizedString(@"选取上限已到，最多只能选取%d张相片", nil), self.picker.maxNumOfAllowedSelectedImages];
+                    [NSString stringWithFormat:NSLocalizedString(@"选取照片上限已到，最多只能选取%d张照片", nil), self.picker.maxNumOfAllowedSelectedImages];
         [[[UIAlertView alloc] initWithTitle:title
                                     message:message
                                    delegate:nil
