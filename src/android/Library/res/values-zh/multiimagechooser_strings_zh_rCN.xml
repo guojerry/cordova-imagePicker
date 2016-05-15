@@ -4,6 +4,4 @@
     <string name="free_version_label">剩余照片数量: %d</string>
     <string name="error_database">打开图片数据库出错！</string>
     <string name="requesting_thumbnails">获取缩略图，请稍候</string>
-    <string name="discard" translatable="false">取消</string>
-    <string name="done" translatable="false">确认</string>
 </resources>

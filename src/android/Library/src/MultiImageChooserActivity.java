@@ -89,6 +89,8 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
     public static final String QUALITY_KEY = "QUALITY";
     public static final String OUTPUT_TYPE_KEY = "OUTPUT_TYPE";
 
+    public static ArrayList<String> outputImages = new ArrayList<String>();
+
     private ImageAdapter ia;
 
     private Cursor imagecursor, actualimagecursor;
@@ -177,8 +179,8 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         setupHeader();
         updateAcceptButton();
         progress = new ProgressDialog(this);
-        progress.setTitle("Processing Images");
-        progress.setMessage("This may take a few moments");
+        progress.setTitle("照片处理中");
+        progress.setMessage("请稍等... ...");
     }
 
     @Override
@@ -193,9 +195,9 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         if (maxImages == 0 && isChecked) {
             isChecked = false;
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Maximum " + maxImageCount + " Photos");
-            builder.setMessage("You can only select " + maxImageCount + " photos at a time.");
-            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            builder.setTitle(maxImageCount + "张照片已选");
+            builder.setMessage("选取照片上限已到，最多只能选择" + maxImageCount + "张照片");
+            builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.cancel();
                 }
@@ -546,6 +548,7 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
                         al.add(Uri.fromFile(file).toString());
                     } else if (outputType == OutputType.BASE64_STRING){
                         al.add(getBase64OfImage(bmp));
+                        outputImages.add(getBase64OfImage(bmp));
                     }
                 }
                 return al;
@@ -574,7 +577,7 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
                 setResult(RESULT_CANCELED, data);
             } else if (al.size() > 0) {
                 Bundle res = new Bundle();
-                res.putStringArrayList("MULTIPLEFILENAMES", al);
+                res.putStringArrayList("MULTIPLEFILENAMES", new ArrayList<String>());
                 if (imagecursor != null) {
                     res.putInt("TOTALFILES", imagecursor.getCount());
                 }
